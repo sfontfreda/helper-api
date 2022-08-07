@@ -1,0 +1,25 @@
+version: "3.9"
+
+services: 
+
+  mongodb:
+    container_name: mongodb
+    image: mongo:latest
+    restart: always
+    volumes:
+      - mongodb:/data/db
+
+  helper-api:
+    build: .
+    container_name: api
+    ports:
+        - "3000:3000"
+    environment:
+      PORT: 3000
+      MONGODB_URI: mongodb://mongodb:27017
+      DB_NAME: tasks
+    depends_on:
+      - mongodb
+    
+volumes:
+  mongodb: {}

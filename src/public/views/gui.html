@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="/scripts/scripts.js"></script>
+      <link rel="stylesheet" href="/styles/styles.css">
+      <title>Helper API</title>
+  </head>
+
+  <body>
+
+    <h1 id="message"> <strong> WELCOME! 👋 </strong>  </h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th class="empty-th"> </th>
+          <th> ID </th>
+          <th> STATUS </th>
+          <th> MTId </th>
+          <th> filename </th>
+          <th class="empty-th"> </th>
+        </tr>
+      </thead>
+      <tbody id="task-table-body"> </tbody>
+    </table>
+
+    <form style="display: none" id="modify-form">
+      <h4 style="display:inline"> Current state: </h4>
+      <span id="current-state"></span>
+
+      <h4> Modify entry state to: </h4>
+      <select id="select" > </select>
+      <span id="button"> </span>
+    </form>
+
+  </body>
+</html>

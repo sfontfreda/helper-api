@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+* { 
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+}
+
+body {
+    max-width: 1000px;
+    margin: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px 20px;
+    border: 1px solid rgb(193, 193, 193);
+}
+
+#message {
+    line-height: 5
+}
+
+#modify-form {
+    display: none;
+}
+
+#modify-form p {
+    display: inline-block;
+}
+
+
+.empty-th {
+    border: 0px;
+}
+
+.ready { 
+    color: green;
+}
+
+.reserved {
+    color: orange; 
+}
+
+.delayed {
+    color: red; 
+}
