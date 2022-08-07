@@ -65,12 +65,12 @@ To trigger this functionalitites an additional tool like *Postman* are needed.
 
 The GUI is available at `http://localhost:3000/gui`. This simple interface allows testing some of the functionalities presented above. 
 Every second there is a `GET` petition to retrieve all the tasks from the database, these are shown on a table. 
-![Graphic User Interface](./img/gui.PNG))
+![Graphic User Interface](./img/gui.PNG)
 
 **NOTE**: The frist time the app is launched there will be no data in the database, make sure to send some `POSTS Requests` with Postman or similar to have some data to play with!
 
 The UI allows the user to either **delete** a task or **edit the status** of a task. 
-![Graphic User Interface](./img/modify.PNG))
+![Graphic User Interface](./img/modify.PNG)
 
 The **CHANGE STATUS** button unfolds a drop down menu which allows to change the status of the two existing states (excluding the one the task currently is). Once an option is selected and the **APPLY** button is clicked the task will be updated in the database and one second later this change will be visible in the table containing all tasks.
 
