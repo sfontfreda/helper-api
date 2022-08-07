@@ -13,6 +13,8 @@ It uses `Dockfile` and `docker-compose.yml` allow the built of the two instances
 --- 
 
 #### Run the app locally
+**NOTE**: To be able to run the app locally having MongoDB installed and running with the *tasks* database is required.
+
 
     npm install 
 Will Install all dependecies stated in the `package.json` file.
@@ -67,7 +69,7 @@ The GUI is available at `http://localhost:3000/gui`. This simple interface allow
 Every second there is a `GET` petition to retrieve all the tasks from the database, these are shown on a table. 
 ![Graphic User Interface](./img/gui.PNG)
 
-**NOTE**: The frist time the app is launched there will be no data in the database, make sure to send some `POSTS Requests` with Postman or similar to have some data to play with!
+**NOTE**: The first time the app is launched there will be no data in the database, make sure to send some `POSTS Requests` with Postman or similar to have some data to play with!
 
 The UI allows the user to either **delete** a task or **edit the status** of a task. 
 ![Graphic User Interface](./img/modify.PNG)
