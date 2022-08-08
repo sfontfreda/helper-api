@@ -1,6 +1,8 @@
 # Beanstalkd API Helper
 
-This project contains an API developed in NodeJS that allows to keep track of taks saved in a database.
+This project contains an API developed in NodeJS that allows keeping track of taks saved in a database.
+
+The following information is also explained in a video guide: https://www.youtube.com/watch?v=EetpCcN1qmo
 
 The entire application is contained within the `src` folder.
 
@@ -13,7 +15,7 @@ It uses `Dockfile` and `docker-compose.yml` allow the built of the two instances
 --- 
 
 #### Run the app locally
-**NOTE**: To be able to run the app locally having MongoDB installed and running with the *tasks* database is required.
+**NOTE**: To be able to run the app locally having MongoDB installed and running with the *tasks* database is required. NodeJS is also required.
 
 
     npm install 
